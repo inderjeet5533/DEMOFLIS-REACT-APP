@@ -5,7 +5,7 @@ function Card() {
         className="rounded-1"
         src="src/assets/Artificial Intelligence.png"
         alt="sports"
-        width="220"
+        width="260"
         height="150"
       ></img>
     </div>

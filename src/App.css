@@ -73,6 +73,7 @@ input::placeholder {
   display: flex;
   overflow: auto !important;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .avd {
