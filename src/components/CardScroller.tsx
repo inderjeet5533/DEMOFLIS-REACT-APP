@@ -1,11 +1,12 @@
-import { forwardRef, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Cards from "./Cards";
 
 interface Props {
   isShown: boolean;
+  imgList: Array<string>;
 }
 
-function CardScroller({ isShown }: Props) {
+function CardScroller({ isShown, imgList }: Props) {
   const ref = useRef(null);
   const [isPrev, setIsPrev] = useState(false);
 
@@ -49,7 +50,7 @@ function CardScroller({ isShown }: Props) {
       ) : (
         ""
       )}
-      <Cards ref={ref}></Cards>
+      <Cards imgList={imgList} ref={ref}></Cards>
       {isShown ? (
         <div className="asd end-0" onClick={next}>
           <span

@@ -36,6 +36,10 @@ input::placeholder {
   margin-right: 25px;
 }
 
+.margin-tb {
+  margin-bottom: 3vw;
+}
+
 .main-div-layer {
   position: relative;
 }
